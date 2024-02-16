@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Space Website</title>
+    <style>
+        body {
+    font-family: Pacifico, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://github.com/SmithaSandrina7/cosmic-space-website/blob/main/space-background.jpg?raw=true); /* Replace this URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+        .container {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        #reaper {
+            width: 200px;
+            height: 200px;
+        }
+
+        #options {
+            margin-top: 50px;
+        }
+
+        #options button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        #info {
+            display: none;
+            margin-top: 50px;
+        }
+
+        #info p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Cosmic Space</h1>
+        <img src="https://github.com/SmithaSandrina7/cosmic-space-website/blob/main/reaper.jpg?raw=true" alt="Mysterious Coated Reaper" id="reaper">
+        <div id="options">
+            <button onclick="showInfo('yes')">Yes</button>
+            <button onclick="showInfo('no')">No</button>
+        </div>
+        <div id="info">
+            <p><strong>Name:</strong> Smitha Sandrina</p>
+            <p><strong>Father's name:</strong> Giridhar S K</p>
+            <p><strong>Mother's name:</strong> Shobha</p>
+            <p><strong>Brother's name:</strong> Vikash Denzil. G</p>
+            <p><strong>Experience:</strong> Highly skilled in doing nothing.</p>
+            <p><strong>Objective:</strong> To become someone like Denzil.</p>
+            <p>Thank you for your time future employer. Hope I impressed you. You may now exit... And God bless✨</p>
+        </div>
+    </div>
+
+    <script>
+        function showInfo(choice) {
+            if (choice === 'yes') {
+                document.getElementById('info').style.display = 'block';
+                document.getElementById('options').style.display = 'none';
+            } else {
+                alert("Your loss...");
+            }
+        }
+    </script>
+</body>
+</html>
